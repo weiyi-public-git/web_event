@@ -67,9 +67,8 @@ $(function () {
         }
         layer.msg('登录成功！')
         // 将登录成功得到的 token 字符串，保存到localStorage 中
-        console.log(res.token);
         localStorage.setItem('token', res.token)
-        // location.href = '/index.html'
+        location.href = '/index.html'
       }
     })
   })
